@@ -80,10 +80,15 @@
   				<li>Гарантия</li>
   				<li>Кредит</li>
   			</ul>
-  			<h2></h2>
-  			<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+  			<h2>Доставка</h2>
+  			<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        <img src="img/svg-device/delivery.svg">
+        </p>
+
   		</section> 
-  		<div class="logotypes"></div>	
+  		<div class="logotypes">
+      <img src="img/logotypes.png" alt="Логотипы представленных брендов">  
+      </div>	
   		<section>
   			<h2>О нас</h2>
   			<p> Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
@@ -100,7 +105,7 @@
   		<section>
   			<h2>Контакты</h2>
   			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает</p>
-  			<img src="img/map.jpg" alt="Карта">
+  			<img src="img/map.jpg" alt="Карта" width="560" height="222">
   			<p>Напишите нам</p>  			
   		</section>
   	</main>
@@ -115,9 +120,10 @@
   		</ul>
   		<div class="footer-social">
   			<ul>
-  				<li><a class="social-button" href="#">Фейсбук</a></li> 	          <li><a class="social-button" href="#">Инстаграм</a></li>
-                <li><a class="social-button" href="#">Твитер</a></li>  
-            </ul>       
+  				<li><a class="social-button" href="#">Фейсбук</a></li> 
+           <li><a class="social-button" href="#">Инстаграм</a></li>
+           <li><a class="social-button" href="#">Твитер</a></li>  
+        </ul>       
         
       </div>
   		<ul class="user-navigation">
@@ -129,7 +135,39 @@
   		<a class="HTML-logo" href="https://htmlacademy.ru/intensive/htmlcss">
   			<img src="img/svg-device/logo-html.svg" width="27" height="35" alt="Логотип Академии HTML">
   			</a>
-  	</footer>  
+  	</footer> 
+    <section class="modal writeUs">
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label >
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          
+            </label>          
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:
+            <input type="text" name="e-mail" placeholder="email@example.com">           
+          </label>
+        </p>
+        <p>
+          <textarea name="letter-field" rows="3">В свободной форме</textarea>
+        </p>
+        <button class="button" type="submit">
+            Отправить
+          </button>       
+      </form>     
+    </section> 
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Cтроителей 15, Москва">
+      </p>
+      <button class="modal-close" type="button">
+          Закрыть
+        </button>
+    </section>
 
   </body>
 </html>

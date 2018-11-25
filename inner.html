@@ -32,20 +32,58 @@
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
-        <p>Цвет</p>
-        <ul>                  
-          <li>Черный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
+      	<h2 class="visually-hidden">Фильтр товаров</h2>
+      	<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      		<fieldset>
+      			<legend>Цвет</legend>
+      			<ul>
+                     <li class="filter-option">
+                     	<input type="checkbox" name="black" id="black" checked>
+                     	<label for="black">Черный</label>
+                     </li>
+
+                     <li>
+                     	<input type="checkbox" name="white" id="white">
+                     	<label for="white">Белый</label>
+                     </li>
+                     <li>
+                     	<input type="checkbox" name="blue" checked id="blue"> 
+                     	<label for="blue">Синий</label>
+                     </li>
+                     <li>
+                     	<input type="checkbox" name="red" id="red" checked>
+                     	<label for="red">Красный</label>
+                     </li>
+                     <li>
+                     	<input type="checkbox" name="pink" id="pink">
+                     	<label for="pink">Розовый</label>
+                     </li>
+               </ul>               
+      		</fieldset> 
+      		<fieldset>
+      			<legend>Bluetooth</legend>
+      			<ul>
+      				<li class="filter-option">      					
+      					<label >
+      						<input type="radio" name="Bluetooth-option" value="yes" checked>
+      						Есть
+      					</label>
+      				</li>
+      				<li>
+      					
+      					<label >
+      						<input type="radio" name="Bluetooth-option" value="no">
+      						Нет
+      					</label>
+      				</li>   
+          
         </ul>
-        <p>Bluetooth</p>
-        <ul>
-          <li>Есть</li>
-          <li>Нет</li>
-        </ul>
-        <p>Показать</p>        
+      		</fieldset> 
+      		<button type="submit" class="filter-button button">
+            Показать
+          </button>    		
+      	</form>  
+                                     
       </section>
       <section class="catalog">
         <ul class="catalo-list">
@@ -112,6 +150,7 @@
   			<img src="img/svg-device/logo-html.svg" width="27" height="35" alt="Логотип Академии HTML">
   			</a>
   	</footer>  
+  	
 
   </body>
 </html>
