@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
   		<div class="header-logo">DEVICE</div>
 
   		<nav class="main-navigation">
-  			<div>
+  			<div class="search">
   				<form method="get" action="https://echo.htmlacademy.ru">
   					<input type="text" name="search-form" placeholder="Поиск по сайту">
   				</form>
   			</div> 			
   			<ul class="catalog-dropdown">
-  				<li>
-  					<span>Каталог товаров</span>
+  				<li class="catalog-header">
+  					<a href="#"><span>Каталог товаров</span></a> 
   					<ul class="catalog-items">
   						<li><a href="#">Виртуальная реальность</a></li>
   						<li><a href="#">Моноподы для селфи</a></li>
@@ -31,28 +33,32 @@
   				<li><a href="#">Доставка</a> </li>
   				<li><a href="#">Гарантия</a> </li>
   				<li class="last-link"><a href="#">Контакты</a> </li>
-  			</ul>
+  			</ul>  			
   		</nav>
 
   	</header>
   	<main>
-  		<div class="slider">
+  		<div class="slide-dots">
   			<a href="#"><span>Подробнее</span></a>
   			<ul class="slides">
-  				<li><div>dot1</div></li>
-  				<li><div>dot2</div></li>
-  				<li><div>dot3</div></li>
-  			</ul>
+  				<li>dot1</li>
+  				<li>dot2</li>
+  				<li>dot3</li>  				
+  			</ul>  			
+  		</div>
+  		<div class="slider"> 			
   			<div class="slider_slide">
-  				<img src="img/slider-1.png"  width="384" height="486" alt="Фото первого слайда"> 
-  				
+  				<img src="img/slider-1.png"  width="384" height="486" alt="Фото первого слайда">   				
   				<div class="slider_slide-content">
-  					<span>01</span> 
-  				    <p><big>Делай селфи, как  Бен стиллер!</big></p>
-  				    <p>Самая длинная палка для селфи доступна в нашем магазине.
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-  					<table class="item-info">
-  						<tr>
+  					<div class="slide_text">
+  						<span>01</span> 
+  				        <big>Делай селфи, как  Бен стиллер!</big>
+  				        <p>Самая длинная палка для селфи доступна в нашем магазине.
+                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+  					</div>
+  					<div class="slide_table">
+  						<table class="item-info">
+  						<tr class="first_colomn">
   							<td>8.5 м</td>
   							<td>5 кг</td>
   							<td>Карбон</td>  							
@@ -62,38 +68,44 @@
   							<td>Вес палки</td>
   							<td>Материал</td>  							
   						</tr>  			
-  		            </table>  					
+  		            </table>
+  					</div> 					  					
   				</div>
-
-
   			</div>
   			<div class="slider_slide">
   				<img src="img/slider-2.png" width="345" height="485" alt="Фото второго слайда">
   				<div class="slider_slide-content">
-  					<span>02</span>
-  					<p><big>Худеем правильно!</big></p>
-  					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
-                    не пропускать занятия и соблюдать диету.</p>
-                    <table class="item-info">
-                    	<tr>
-                    		<td>48 часов</td>                    		
+  					<div class="slide_text">
+  						<span>02</span>
+  					    <big>Худеем правильно!</big>
+  					    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
+                        не пропускать занятия и соблюдать диету.</p>					
+  					</div>
+  					<div class="slide_table">  						
+  					<table class="item-info">
+                    	<tr class="first_colomn">
+                    		<td >48 часов</td>                    		
                     	</tr>
                     	<tr>
                     		<td>Без подзарядки</td>                    		
                     	</tr>
-                    </table>
+                    </table>  						
+  					</div>
   				</div>
   			</div>
   			<div class="slider_slide">
   				<img src="img/slider-3.png" width="526" height="334" alt="Фото третьего слайда">
   				<div class="slider_slide-content">
-  					<span>03</span>
-  					<p><big>Порхает как бабочка,
-                    жалит как пчела!</big></p>
-                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
-                    мощным лазером, замаскированным под стандартную камеру.</p>
-                    <table class="item-info">
-                    	<tr>
+  					<div class="slide_text">
+  						<span>03</span>
+  					    <big>Порхает как бабочка,
+                        жалит как пчела!</big>
+                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                        мощным лазером, замаскированным под стандартную камеру.</p>
+  					</div>
+  					<div class="slide_table">
+  						<table class="item-info">
+                    	<tr class="first_colomn">
                     		<td>800 м</td>
                     		<td>50 м</td>
                     	</tr>
@@ -102,7 +114,7 @@
                     		<td>Радиус поражения</td>
                     	</tr>                    	
                     </table>
-  					
+  					</div>					
   				</div>
   			</div>
   		</div>  	
@@ -134,8 +146,8 @@
   				</li>
   			</ul>
   		</div>
-  		<section class="servises">
-  			<div class="servises_points">
+  		<section class="serviсes">
+  			<div class="serviсes_points">
   				<ul>
   				<li><button type="button">Доставка</button> </li>
   				<li><button type="button">Гарантия</button> </li>
@@ -205,14 +217,16 @@
   				<li><a class="social-button" href="#">Фейсбук</a></li> 
            <li><a class="social-button" href="#">Инстаграм</a></li>
            <li><a class="social-button" href="#">Твитер</a></li>  
-        </ul>       
+        </ul>     
         
       </div>
-  		<ul class="user-navigation">
-  			<li><a href="#">Войти</a></li>
-  			<li><a href="#">Сравнить</a></li>
-  			<li><a href="#">Корзина</a></li>
-  		</ul>
+      <div class="user-navigation">
+        <ul>
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </div>      
   		<p>Тел.:+7(495)495-95-95</p>
   		<a class="HTML-logo" href="https://htmlacademy.ru/intensive/htmlcss">
   			<img src="img/svg-device/logo-html.svg" width="27" height="35" alt="Логотип Академии HTML">
@@ -253,6 +267,5 @@
       	X
       </button>
     </section>
-
   </body>
 </html>

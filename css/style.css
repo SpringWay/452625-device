@@ -1,0 +1,90 @@
+@font-face{
+	font-family: gilroyextrabold;
+	src: url(fonts/gilroyextrabold.woff2),
+	url(fonts/gilroyextrabold.woff);
+}
+@font-face{
+	font-family: gilroylight;
+	src: url(fonts/gilroylight.woff2),
+	url(fonts/gilroylight.woff);
+}
+@font-face{
+	font-family: opensans;
+	src:url(fonts/opensans.woff2),
+	url(fonts/opensans.woff);
+}
+@font-face{
+	font-family: opensanslight;
+	src:url(fonts/opensanslight.woff2),
+	url(fonts/opensanslight.woff)
+	;
+}
+body{
+	font-family: gilroyextrabold;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color:black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul{
+	list-style: none;
+}
+.header-logo{
+	color: black;
+	font-size: 48px;
+	font-height: 48px;
+	font-weight: normal;
+}
+p,
+.search{
+	font-family: opensanslight;
+	font-size: 15px;
+	line-height: 30px;
+}
+.first_colomn{
+	font-family: gilroylight;
+	font-size: 36px;
+	line-height: 48px;
+}
+.item-info{
+	font-family:opensanslight; 
+	font-size:13px;
+	line-height:20px;
+}
+.slide_text span{
+	color:white;
+	font-size: 180px;
+	line-height: 180px;
+}
+footer,
+footer p {
+	background-color: #464646;
+	
+}
+.shop-info li a,
+.user-navigation li a{
+	color:white;
+}
+.footer-logo{
+	font-family: gilroyextrabold;
+	color: #ffc600;
+	font-size: 48px;
+}
+.modal_writeUs input{
+background-color: #f2f2f2;
+font-family: opensans;
+font-size: 14px;
+line-height: 18px;
+color:#464646;
+}
+.modal_writeUs textarea{
+background-color: #f2f2f2;
+font-family: opensans;
+font-size: 14px;
+line-height: 18px;
+color:#464646;
+}
